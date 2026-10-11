@@ -149,20 +149,6 @@ actions:
   - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents\3\Theme0', value: 'Color', type: REG_DWORD, data: '4294901930'}
   - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents\3\Theme1', value: 'Color', type: REG_DWORD, data: '4294967064'}
 
-  # === Disable transparency and animations
-  - !registryValue:
-    path: 'HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize'
-    value: 'EnableTransparency'
-    type: REG_DWORD
-    data: '0'
-    option: 'configure-te'
-  - !registryValue:
-    path: 'HKCU\Control Panel\Desktop\WindowMetrics'
-    value: 'MinAnimate'
-    type: REG_SZ
-    data: '0'
-    option: 'configure-te'
-
   # ======> Start
   # === Show suggestions occasionally in Start - Off
   - !registryValue: {path: 'HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager', value: 'SubscribedContent-338388Enabled', type: REG_DWORD, data: '0'}
